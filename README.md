@@ -1,6 +1,7 @@
 # Case Accessors
 
 This package offers macros that ease enum pattern-matching.
+This version was forked from [rhysforyou's repository](https://github.com/rhysforyou/swift-case-accessors) in order to add additional features.
 
 ## Overview
 
