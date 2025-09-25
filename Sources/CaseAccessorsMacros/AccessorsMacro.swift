@@ -78,7 +78,7 @@ public struct CaseAccessorsMacro: MemberMacro {
 			}
 
 			return """
-			var \(caseElement.name): \(returnTypeSyntax) {
+			public var \(caseElement.name): \(returnTypeSyntax) {
 				get {
 					if case let .\(caseElement.name)(\(raw: valueBindings)) = self { \(raw: returnValue) } else { nil } 
 				}

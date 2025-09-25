@@ -27,13 +27,13 @@ public struct CaseConditionalsMacro: MemberMacro {
 
 			if caseElement.parameterClause != nil {
 				return """
-				var is\(raw: identifier): Bool {
+				public var is\(raw: identifier): Bool {
 					if case .\(caseElement.name) = self { true } else { false }
 				}
 				"""
 			} else {
 				return """
-				var is\(raw: identifier): Bool {
+				public var is\(raw: identifier): Bool {
 					get { 
 						if case .\(caseElement.name) = self { true } else { false }
 					}
